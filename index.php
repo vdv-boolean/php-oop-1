@@ -1,4 +1,6 @@
 <?php
+
+// Class declaration
 class Movie {
     public $title;
     public $year;
@@ -7,6 +9,7 @@ class Movie {
     public $img;
 }
 
+// Objects declarations
 $matrix = new Movie;
 $matrix->title = "The Matrix";
 $matrix->year = 1999;
@@ -35,6 +38,8 @@ $matrix_resurretions->language = "eng";
 $matrix_resurretions->genre = "fantasy";
 $matrix_resurretions->img = "(da aggiungere)"; //TODO: Add img
 
+
+// Temporary var_dump print
 var_dump($matrix);
 var_dump($matrix_reloaded);
 var_dump($matrix_revolutions);
