@@ -17,6 +17,12 @@ class Movie {
         $this->genre = $genre;
         $this->img = $img;
     }
+
+    // Get metadata fn
+    public function getData()
+    {
+        return "Titolo: " . $this->title . "; <br> Anno di uscita: " . $this->year . "; <br> Lingua originale: " . $this->language . "; <br> Genere: " . $this->genre . '; <br> <img alt="Poster non disponibile"> <br> <hr>';
+    }
 }
 
 
@@ -62,7 +68,15 @@ $matrix_resurretions = new Movie("The Matrix Resurrections", 2022, "ENG", "Fanta
 
 
 // Temporary var_dump print
+/*
 var_dump($matrix);
 var_dump($matrix_reloaded);
 var_dump($matrix_revolutions);
 var_dump($matrix_resurretions);
+*/
+
+// Temporary echo print
+echo $matrix->getData();
+echo $matrix_reloaded->getData();
+echo $matrix_revolutions->getData();
+echo $matrix_resurretions->getData();
