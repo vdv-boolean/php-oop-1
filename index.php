@@ -21,22 +21,26 @@ class Movie {
     // Get metadata fn
     public function getData()
     {
+        if ($this->img === "") 
+            $msg = "(Poster non disponibile)";
+        else
+            $msg = "";
         return
             "Titolo: " . $this->title . "; <br>
             Anno di uscita: " . $this->year . "; <br>
             Lingua originale: " . $this->language . "; <br>
             Genere: " . $this->genre . '; <br>
-            <img alt="Poster non disponibile"> <br>
+            <img src="' . $this->img . '">' . $msg . '<br>
             <hr>'
         ;
     }
 }
 
 // Objs eclaration using construct fn
-$matrix = new Movie("The Matrix", 1999, "ENG", "Fantasy", "(da aggiungere)");
-$matrix_reloaded = new Movie("The Matrix Reloaded", 2003, "ENG", "Fantasy", "(da aggiungere)");
-$matrix_revolutions = new Movie("The Matrix Revolutions", 2003, "ENG", "Fantasy", "(da aggiungere)");
-$matrix_resurretions = new Movie("The Matrix Resurrections", 2022, "ENG", "Fantasy", "(da aggiungere)");
+$matrix = new Movie("The Matrix", 1999, "ENG", "Fantasy", "");
+$matrix_reloaded = new Movie("The Matrix Reloaded", 2003, "ENG", "Fantasy", "");
+$matrix_revolutions = new Movie("The Matrix Revolutions", 2003, "ENG", "Fantasy", "");
+$matrix_resurretions = new Movie("The Matrix Resurrections", 2022, "ENG", "Fantasy", "");
 //TODO: Add imgs
 
 // Temporary echo print
