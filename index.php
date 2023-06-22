@@ -14,4 +14,28 @@ $matrix->language = "eng";
 $matrix->genre = "fantasy";
 $matrix->img = "(da aggiungere)"; //TODO: Add img
 
+$matrix_reloaded = new Movie;
+$matrix_reloaded->title = "The Matrix Reloaded";
+$matrix_reloaded->year = 2003;
+$matrix_reloaded->language = "eng";
+$matrix_reloaded->genre = "fantasy";
+$matrix_reloaded->img = "(da aggiungere)"; //TODO: Add img
+
+$matrix_revolutions = new Movie;
+$matrix_revolutions->title = "The Matrix Revolutions";
+$matrix_revolutions->year = 2003;
+$matrix_revolutions->language = "eng";
+$matrix_revolutions->genre = "fantasy";
+$matrix_revolutions->img = "(da aggiungere)"; //TODO: Add img
+
+$matrix_resurretions = new Movie;
+$matrix_resurretions->title = "The Matrix Resurrections";
+$matrix_resurretions->year = 2022;
+$matrix_resurretions->language = "eng";
+$matrix_resurretions->genre = "fantasy";
+$matrix_resurretions->img = "(da aggiungere)"; //TODO: Add img
+
 var_dump($matrix);
+var_dump($matrix_reloaded);
+var_dump($matrix_revolutions);
+var_dump($matrix_resurretions);
