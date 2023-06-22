@@ -7,9 +7,21 @@ class Movie {
     public $language;
     public $genre;
     public $img;
+
+    // Construct fn for OBJ declaration
+    public function  __construct($title,$year, $language, $genre, $img)
+    {
+        $this->title = $title;
+        $this->year = $year;
+        $this->language = $language;
+        $this->genre = $genre;
+        $this->img = $img;
+    }
 }
 
+
 // Objects declarations
+/*
 $matrix = new Movie;
 $matrix->title = "The Matrix";
 $matrix->year = 1999;
@@ -37,7 +49,7 @@ $matrix_resurretions->year = 2022;
 $matrix_resurretions->language = "eng";
 $matrix_resurretions->genre = "fantasy";
 $matrix_resurretions->img = "(da aggiungere)"; //TODO: Add img
-
+*/
 
 // Temporary var_dump print
 var_dump($matrix);
