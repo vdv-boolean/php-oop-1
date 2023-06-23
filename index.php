@@ -36,11 +36,21 @@ class Movie {
     }
 }
 
-// Objs eclaration using construct fn
+// Objs declaration using construct fn
 $matrix = new Movie("The Matrix", 1999, "ENG", "Fantasy", "");
 $matrix_reloaded = new Movie("The Matrix Reloaded", 2003, "ENG", "Fantasy", "");
 $matrix_revolutions = new Movie("The Matrix Revolutions", 2003, "ENG", "Fantasy", "");
 $matrix_resurretions = new Movie("The Matrix Resurrections", 2022, "ENG", "Fantasy", "");
+//TODO: Add imgs
+
+// Array declaration using construct fn
+$movies = [
+    new Movie("The Matrix", 1999, "ENG", "Fantasy", ""),
+    new Movie("The Matrix Reloaded", 2003, "ENG", "Fantasy", ""),
+    new Movie("The Matrix Reloaded", 2003, "ENG", "Fantasy", ""),
+    new Movie("The Matrix Revolutions", 2003, "ENG", "Fantasy", ""),
+    new Movie("The Matrix Resurrections", 2022, "ENG", "Fantasy", ""),
+] ;
 //TODO: Add imgs
 
 // Temporary echo print
@@ -48,3 +58,6 @@ echo $matrix->getData();
 echo $matrix_reloaded->getData();
 echo $matrix_revolutions->getData();
 echo $matrix_resurretions->getData();
+
+//Temporaty var_dump print
+var_dump($movies);
