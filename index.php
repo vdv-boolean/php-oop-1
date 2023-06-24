@@ -90,11 +90,5 @@ $movies = [
 ] ;
 //TODO: Add imgs
 
-// Temporary echo print
-echo $matrix->getData();
-echo $matrix_reloaded->getData();
-echo $matrix_revolutions->getData();
-echo $matrix_resurretions->getData();
-
 //Temporaty var_dump print
 var_dump($movies);
