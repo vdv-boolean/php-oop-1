@@ -1,6 +1,8 @@
 <?php
 
-// Class declaration
+// Class declarations
+
+//Movie Class
 class Movie {
     public $title;
     public $year;
@@ -34,6 +36,18 @@ class Movie {
             <hr>'
         ;
     }
+}
+
+// Genre Class
+class Genre {
+    public $name;
+
+    // Construct fn for OBJ declaration
+    public function  __construct(string $name)
+    {
+        $this->name = $name;
+    }
+
 }
 
 // Objs declaration using construct fn
