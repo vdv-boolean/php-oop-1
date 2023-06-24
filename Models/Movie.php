@@ -1,6 +1,6 @@
 <?php
 
-// Class declarations
+// Class declaration
 class Movie {
     public $title;
     public $year;
