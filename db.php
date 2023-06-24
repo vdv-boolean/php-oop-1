@@ -1,11 +1,20 @@
 <?php
 
-// Array declaration using construct fn
+// Language array
+$language = [
+    "ITA",
+    "ENG",
+    "JAP",
+    "FRA",
+    "ESP",
+];
+
+// Movie array
 $movies = [
     new Movie(
         "The Matrix",
         1999,
-        "ENG",
+        $language[1],
         [
             new Genre("Fantasy"),
             new Genre("Action"),
@@ -15,7 +24,7 @@ $movies = [
     new Movie(
         "The Matrix Reloaded",
         2003,
-        "ENG",
+        "$language[1]",
         [
             new Genre("Fantasy"),
             new Genre("Action"),
@@ -25,7 +34,7 @@ $movies = [
     new Movie(
         "The Matrix Reloaded",
         2003,
-        "ENG",
+        "$language[1]",
         [
             new Genre("Fantasy"),
             new Genre("Action"),
@@ -35,7 +44,7 @@ $movies = [
     new Movie(
         "The Matrix Revolutions",
         2003,
-        "ENG",
+        "$language[1]",
         [
             new Genre("Fantasy"),
             new Genre("Action"),
@@ -45,12 +54,12 @@ $movies = [
     new Movie(
         "The Matrix Resurrections",
         2022,
-        "ENG",
+        "$language[1]",
         [
             new Genre("Fantasy"),
             new Genre("Action"),
         ],
         ""
     ),
-] ;
+];
 // TODO: Add imgs
