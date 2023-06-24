@@ -7,16 +7,16 @@ class Movie {
     public $title;
     public $year;
     public $language;
-    public $genre;
+    public $genres;
     public $img;
 
     // Construct fn for OBJ declaration
-    public function  __construct(string $title, int $year, string $language, array $genre, string $img)
+    public function  __construct(string $title, int $year, string $language, array $genres, string $img)
     {
         $this->title = $title;
         $this->year = $year;
         $this->language = $language;
-        $this->genre = $genre;
+        $this->genres = $genres;
         $this->img = $img;
     }
 
@@ -31,7 +31,7 @@ class Movie {
             "Titolo: " . $this->title . "; <br>
             Anno di uscita: " . $this->year . "; <br>
             Lingua originale: " . $this->language . "; <br>
-            Genere: " . $this->genre . '; <br>
+            Genere: " . $this->genres . '; <br>
             <img src="' . $this->img . '">' . $msg . '<br>
             <hr>'
         ;
@@ -103,9 +103,10 @@ $movies = [
         ""
     ),
 ] ;
-//TODO: Add imgs
+// TODO: Add imgs
 
-//Temporaty echo print
+// Temporaty echo print
 foreach ($movies as $movie) {
     echo $movie->getData();
  }
+// TODO: print correctly genres array
