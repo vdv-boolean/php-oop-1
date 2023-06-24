@@ -15,13 +15,15 @@ include __DIR__ . '/db.php';
         <title>Document</title>
     </head>
     <body>
-        <?php
-        // Temporaty echo print
-        foreach ($movies as $movie) {
-            echo $movie->getData();
-        }
-        // TODO: print correctly genres array
-    ?>
+            <?php
+                // Temporaty echo print
+                foreach ($movies as $movie) { ?>
+                    <ul><?php
+                        echo $movie->getData();
+                        // TODO: print correctly genres array?>
+                    </ul><?php
+                }
+            ?>
     </body>
 </html>
 
