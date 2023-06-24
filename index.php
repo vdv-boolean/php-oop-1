@@ -11,7 +11,7 @@ class Movie {
     public $img;
 
     // Construct fn for OBJ declaration
-    public function  __construct(string $title, int $year, string $language, $genre, string $img)
+    public function  __construct(string $title, int $year, string $language, array $genre, string $img)
     {
         $this->title = $title;
         $this->year = $year;
@@ -26,7 +26,7 @@ class Movie {
         if ($this->img === "") 
             $msg = "(Poster non disponibile)";
         else
-            $msg = "";
+            $msg = "";   
         return
             "Titolo: " . $this->title . "; <br>
             Anno di uscita: " . $this->year . "; <br>
@@ -105,5 +105,7 @@ $movies = [
 ] ;
 //TODO: Add imgs
 
-//Temporaty var_dump print
-var_dump($movies);
+//Temporaty echo print
+foreach ($movies as $movie) {
+    echo $movie->getData();
+ }
