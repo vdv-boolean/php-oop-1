@@ -26,12 +26,21 @@ class Movie {
         else
             $msg = "";   
         return
-            "Titolo: " . $this->title . "; <br>
-            Anno di uscita: " . $this->year . "; <br>
-            Lingua originale: " . $this->language . "; <br>
-            Genere: " . $this->genres . '; <br>
-            <img src="' . $this->img . '">' . $msg . '<br>
-            <hr>'
+            "<li>
+                Titolo: " . $this->title . ";
+            </li>
+            <li>
+                Anno di uscita: " . $this->year . ";
+            </li>
+            <li>
+                Lingua originale: " . $this->language . ";
+            </li>
+            <li>
+                Genere: " . $this->genres . ';
+            </li>
+            <li>
+                <img src="' . $this->img . '">' . $msg .
+            "</li>"
         ;
     }
 }
