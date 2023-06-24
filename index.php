@@ -11,7 +11,7 @@ class Movie {
     public $img;
 
     // Construct fn for OBJ declaration
-    public function  __construct(string $title, int $year, string $language, string $genre, string $img)
+    public function  __construct(string $title, int $year, string $language, $genre, string $img)
     {
         $this->title = $title;
         $this->year = $year;
@@ -56,35 +56,35 @@ $movies = [
         "The Matrix",
         1999,
         "ENG",
-        "Fantasy",
+        new Genre("Fantasy"),
         ""
     ),
     new Movie(
         "The Matrix Reloaded",
         2003,
         "ENG",
-        "Fantasy",
+        new Genre("Fantasy"),
         ""
     ),
     new Movie(
         "The Matrix Reloaded",
         2003,
         "ENG",
-        "Fantasy",
+        new Genre("Fantasy"),
         ""
     ),
     new Movie(
         "The Matrix Revolutions",
         2003,
         "ENG",
-        "Fantasy",
+        new Genre("Fantasy"),
         ""
     ),
     new Movie(
         "The Matrix Resurrections",
         2022,
         "ENG",
-        "Fantasy",
+        new Genre("Fantasy"),
         ""
     ),
 ] ;
